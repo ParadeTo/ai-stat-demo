@@ -1,0 +1,18 @@
+[
+  {
+    "key": "ctrl+shift+a",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "// AI-Generated\n$0\n// End AI-Generated"
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": " // AI-Generated"
+    },
+    "when": "editorTextFocus"
+  }
+] 
