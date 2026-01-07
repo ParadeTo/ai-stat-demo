@@ -24,7 +24,7 @@ function bubbleSort(arr) {
         if (!swapped) {
             console.log('  [优化] 本轮未发生交换，数组已排序完成，提前退出。');
             break;
-        }
+    }
     }
 
     console.log(`\n=== 排序完成总结 ===`);
