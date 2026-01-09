@@ -9,6 +9,13 @@ function sleep(ms) {
     });
 }
 
+function getRandomInt(min, max) {
+    // 采用 Math.floor(Math.random() * ...) 的组合是因为这是 JavaScript 原生且最高效的随机整数生成方案，
+    // 无需引入外部依赖即可满足绝大多数非加密安全场景的需求。
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 module.exports = {
-    sleep
+    sleep,
+    getRandomInt
 };
