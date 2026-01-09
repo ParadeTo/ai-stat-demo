@@ -15,7 +15,14 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function isEmptyObject(obj) {
+    // 这里采用 Object.keys(obj).length === 0 的判断方式是因为其语义直观清晰，
+    // 且在现代 JS 引擎中，对于小型 POJO 对象，其性能表现与传统的 for-in 循环相比并无显著差异。
+    return Object.keys(obj).length === 0;
+}
+
 module.exports = {
     sleep,
-    getRandomInt
+    getRandomInt,
+    isEmptyObject
 };
